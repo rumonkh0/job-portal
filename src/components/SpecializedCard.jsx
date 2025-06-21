@@ -2,7 +2,7 @@ import React from "react";
 
 function SpecializedCard({ logo, title, count }) {
   return (
-    <div className="card w-[270px] cursor-pointer flex items-center gap-2 p-3 bg-white rounded hover:text-white hover:bg-blue-600 group">
+    <div className="card w-[270px] cursor-pointer flex items-center gap-2 p-3 bg-white rounded transition-all hover:text-white hover:bg-blue-600 group">
       <div className="card_logo">
         <img src={logo} alt="logo" />
       </div>
