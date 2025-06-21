@@ -53,6 +53,7 @@ function Category() {
           jobsPosted="1,000+ jobs posted"
         />
       </div>
+      <div className="px-9 py-3 bg-blue-600 text-white rounded">See All</div>
     </div>
   );
 }
