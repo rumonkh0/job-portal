@@ -18,15 +18,15 @@ function Hero() {
           <img className="absolute top-0 left-[460px] -translate-y-full" src="/cornerUp.svg" alt="" />
           <img className="absolute bottom-0 left-[460px] translate-y-full" src="/cornerDown.svg" alt="" />
           <input
-            className="search_input w-[313] h-[48px] px-4 rounded-full border border-gray-300 focus:outline-none focus:border-blue-500 text-[16px]"
+            className="search_input w-[270px] h-[48px] px-4 rounded-full border border-gray-300 focus:outline-none focus:border-blue-500 text-[16px]"
             placeholder="Search for jobs, companies, or locations"
           />
           <input
-            className="search_input w-[313] h-[48px] px-4 rounded-full border border-gray-300 focus:outline-none focus:border-blue-500 text-[16px]"
+            className="search_input w-[270px] h-[48px] px-4 rounded-full border border-gray-300 focus:outline-none focus:border-blue-500 text-[16px]"
             placeholder="Search for jobs, companies, or locations"
           />
           <input
-            className="search_input w-[313] h-[48px] px-4 rounded-full border border-gray-300 focus:outline-none focus:border-blue-500 text-[16px]"
+            className="search_input w-[270px] h-[48px] px-4 rounded-full border border-gray-300 focus:outline-none focus:border-blue-500 text-[16px]"
             placeholder="Search for jobs, companies, or locations"
           />
           <div className="bg-blue-600 px-4 py-3 rounded-full text-white">
