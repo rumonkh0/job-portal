@@ -1,5 +1,6 @@
 import React from "react";
 import hero_img from "../../assets/hero-image.png";
+import SearchJob from "../../components/SearchJob";
 
 function Hero() {
   return (
@@ -14,25 +15,7 @@ function Hero() {
             through streamlined employment processes and opportunities.
           </div>
         </div>
-        <div className="relative searchbar flex items-center gap-6 z-10 bg-white overflow w-[1032px] py-8 rounded-2xl">
-          <img className="absolute top-0 left-[460px] -translate-y-full" src="/cornerUp.svg" alt="" />
-          <img className="absolute bottom-0 left-[460px] translate-y-full" src="/cornerDown.svg" alt="" />
-          <input
-            className="search_input w-[270px] h-[48px] px-4 rounded-full border border-gray-300 focus:outline-none focus:border-blue-500 text-[16px]"
-            placeholder="Search for jobs, companies, or locations"
-          />
-          <input
-            className="search_input w-[270px] h-[48px] px-4 rounded-full border border-gray-300 focus:outline-none focus:border-blue-500 text-[16px]"
-            placeholder="Search for jobs, companies, or locations"
-          />
-          <input
-            className="search_input w-[270px] h-[48px] px-4 rounded-full border border-gray-300 focus:outline-none focus:border-blue-500 text-[16px]"
-            placeholder="Search for jobs, companies, or locations"
-          />
-          <div className="bg-blue-600 px-4 py-3 rounded-full text-white">
-            Find Job
-          </div>
-        </div>
+        <SearchJob />
         <div className="hero_footer flex justify-between items-center">
           <div className="professoinals flex flex-col items-center">
             <div class="images pb-4 flex -space-x-3">
