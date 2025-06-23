@@ -4,6 +4,7 @@ import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Register from "./pages/Register";
 import Modal from "./components/Modal";
+import FormModal from "./components/FormModal";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       {/* <AboutUs/> */}
       {/* <Login/> */}
       {/* <Register /> */}
-      <Modal />
+      {/* <Modal /> */}
+      <FormModal />
     </div>
   );
 }
