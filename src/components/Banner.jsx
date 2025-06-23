@@ -6,7 +6,7 @@ function Banner() {
       <img
         src="/Rectangle 2744.png"
         alt=""
-        className="absolute inset-0 w-full h-full object-cover opacity-80 z-0"
+        className="absolute inset-0 w-full h-full object-cover opacity-60 z-0"
       />
       <div className="absolute inset-0 bg-blue-600 opacity-68"></div>
 

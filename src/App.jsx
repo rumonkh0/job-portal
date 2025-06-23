@@ -1,12 +1,14 @@
 import "./App.css";
 import AboutUs from "./pages/AboutUs";
-// import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div className="flex flex-col items-center gap-20">
-      {/* <Home /> */}
-      <AboutUs/>
+      <Home />
+      {/* <AboutUs/> */}
+      {/* <Login/> */}
     </div>
   );
 }
