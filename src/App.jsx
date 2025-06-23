@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Register from "./pages/Register";
 import Modal from "./components/Modal";
 import FormModal from "./components/FormModal";
+import ContactUs from "./pages/ContactUs";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       {/* <Login/> */}
       {/* <Register /> */}
       {/* <Modal /> */}
-      <FormModal />
+      {/* <FormModal /> */}
+      <ContactUs/>
     </div>
   );
 }
