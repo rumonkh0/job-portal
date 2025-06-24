@@ -6,6 +6,7 @@ import Register from "./pages/Register";
 import Modal from "./components/Modal";
 import FormModal from "./components/FormModal";
 import ContactUs from "./pages/ContactUs";
+import BannerProfile from "./components/BannerProfile";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       {/* <Register /> */}
       {/* <Modal /> */}
       {/* <FormModal /> */}
-      <ContactUs/>
+      {/* <ContactUs/> */}
+      <BannerProfile />
     </div>
   );
 }

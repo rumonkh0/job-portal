@@ -1,6 +1,6 @@
 import React from "react";
 import MailIcon from "../assets/gmail.svg?react";
-import LockIcon from "../assets/lock.svg?react";
+import FbIcon from "../assets/fb.svg?react";
 import CallIcon from "../assets/call.svg?react";
 import GoogleIcon from "../assets/google.svg?react";
 import LinkedIcon from "../assets/linkedin.svg?react";
@@ -18,7 +18,9 @@ function ContactUs() {
               your email regularly.
             </div>
           </div>
-          <form className="flex flex-col gap-6">
+
+          {/* Make form grow */}
+          <form className="flex flex-1 flex-col gap-6">
             <div className="relative">
               <input
                 className="w-full p-4 pl-13 bg-gray-100"
@@ -35,19 +37,24 @@ function ContactUs() {
               />
               <MailIcon className="absolute top-4 left-4 w-6 h-6 text-gray-500" />
             </div>
-            <div className="relative">
+
+            {/* Make textarea grow */}
+            <div className="flex-1 relative">
               <textarea
-                className="w-full p-4 pl-13 bg-gray-100 resize-none"
+                className="w-full h-full p-4 pl-13 bg-gray-100 resize-none"
                 placeholder="Write Your Message"
               />
               <MailIcon className="absolute top-4 left-4 w-6 h-6 text-gray-500" />
             </div>
           </form>
+
+          {/* This stays outside the form */}
           <div className="px-9 py-3 bg-blue-600 text-white rounded w-max">
             Send Message
           </div>
         </div>
-        <div className="flex-1 bg-gray-100 flex flex-col gap-10 px-10 py-42.5">
+
+        <div className="flex-1 bg-gray-100 flex flex-col gap-10 px-10 py-12.5">
           <div>
             <h1 className="text-2xl font-semibold">Get in Touch</h1>
             <p className="pt-8 text-gray-500">
@@ -103,10 +110,10 @@ function ContactUs() {
             <div className="text-[20] font-semibold mb-6">Follow Us On</div>
             <div className="flex gap-4">
               <div className="w-12 h-12 text-white rounded-full bg-blue-600 flex justify-center items-center">
-                <MailIcon className="w-8 h-8" />
+                <GoogleIcon className="w-8 h-8" />
               </div>
               <div className="w-12 h-12 text-white rounded-full bg-blue-600 flex justify-center items-center">
-                <MailIcon className="w-8 h-8" />
+                <FbIcon className="w-8 h-8" />
               </div>
               <div className="w-12 h-12 text-white rounded-full bg-blue-600 flex justify-center items-center">
                 <LinkedIcon className="w-8 h-8" />
