@@ -7,6 +7,11 @@ import Modal from "./components/Modal";
 import FormModal from "./components/FormModal";
 import ContactUs from "./pages/ContactUs";
 import BannerProfile from "./components/BannerProfile";
+import UserDetailsForm from "./pages/UserDetailsForm";
+import FromWorkExperience from "./components/FromWorkExperience";
+import FormEducation from "./components/FormEducation";
+import FormSkill from "./components/FormSkill";
+import CvResumeForm from "./components/CvResumeForm";
 
 function App() {
   return (
@@ -18,7 +23,12 @@ function App() {
       {/* <Modal /> */}
       {/* <FormModal /> */}
       {/* <ContactUs/> */}
-      <BannerProfile />
+      {/* <BannerProfile /> */}
+      {/* <UserDetailsForm /> */}
+      {/* <FromWorkExperience /> */}
+      {/* <FormEducation /> */}
+      {/* <FormSkill/> */}
+      <CvResumeForm/>
     </div>
   );
 }
