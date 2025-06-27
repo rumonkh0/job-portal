@@ -25,7 +25,7 @@ function Header() {
         <div className="header flex gap-2 font-bold text-lg">
           <img src="/logo.svg" alt="" /> JobInto{" "}
         </div>
-        <nav className="nav flex justify-center items-center gap-7">
+        <nav className="nav tranal flex justify-center items-center gap-7">
           <NavLink to="/"
             className={({ isActive }) => `${isActive ? activeClass : ""}`}
           >

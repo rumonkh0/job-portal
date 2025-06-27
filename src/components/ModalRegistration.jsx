@@ -1,8 +1,9 @@
 import BadgeIcon from "../assets/badge.svg?react";
 import CrossIcon from "../assets/cross.svg?react";
+import ModalContainer from "./ModalContainer";
 function Modal() {
   return (
-    <div className="relative py-10 px-15 flex flex-col items-center gap-6 rounded-lg mt-44">
+    <>
       <div>
         <BadgeIcon />
       </div>
@@ -14,10 +15,7 @@ function Modal() {
         </div>
       </div>
       <div className="bg-blue-600 text-white px-10 py-4 rounded">Search Job Now</div>
-      <div className="absolute w-14 h-14 bg-gray-400 rounded-full top-0 right-0 translate-x-1/2 -translate-y-1/2 flex justify-center items-center cursor-pointer">
-        <CrossIcon />
-      </div>
-    </div>
+    </>
   );
 }
 

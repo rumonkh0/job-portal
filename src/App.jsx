@@ -4,7 +4,7 @@ import AboutUs from "./pages/AboutUs";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Register from "./pages/Register";
-import Modal from "./components/Modal";
+import Modal from "./components/ModalRegistration";
 import FormModal from "./components/FormModal";
 import ContactUs from "./pages/ContactUs";
 import BannerProfile from "./components/BannerProfile";

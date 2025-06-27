@@ -4,8 +4,12 @@ import FbIcon from "../assets/fb.svg?react";
 import GoogleIcon from "../assets/google.svg?react";
 import LinkedIcon from "../assets/linkedin.svg?react";
 import UserIcon from "../assets/user.svg?react";
+import ModalContainer from "../components/ModalContainer";
+import { useState } from "react";
+import Modal from "../components/ModalRegistration";
 
 function Register() {
+  const [open, setOpen] = useState(false);
   return (
     <div
       className="w-[1170px] flex justify-around items-stretch"
@@ -107,7 +111,10 @@ function Register() {
               </label>
             </div>
           </div>
-          <div className="px-9 py-4 bg-blue-600 text-white text-center mt-4 mb-10">
+          <div
+            className="px-9 py-4 bg-blue-600 text-white text-center mt-4 mb-10 cursor-pointer"
+            onClick={() => setOpen(true)}
+          >
             Create my account
           </div>
         </form>
@@ -122,6 +129,9 @@ function Register() {
           </p>
         </div>
       </div>
+      <ModalContainer isOpen={open} onClose={() => setOpen(false)}>
+        <Modal />
+      </ModalContainer>
     </div>
   );
 }
