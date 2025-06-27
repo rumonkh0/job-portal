@@ -2,6 +2,7 @@ import SearchIcon from "../assets/search.svg?react";
 import ArrowIcon from "../assets/arrow.svg?react";
 import BookIcon from "../assets/book.svg?react";
 import LocationIcon from "../assets/location.svg?react";
+import { Link } from "react-router-dom";
 function SearchJob({ bgColor, btnColor }) {
   return (
     <div
@@ -56,14 +57,14 @@ function SearchJob({ bgColor, btnColor }) {
           placeholder="Location"
         />
       </div>
-      <div
+      <Link to="/jobs"
         className={`flex gap-4 px-4 py-3 rounded-full bg-${btnColor}-600 bg-${btnColor} text-white cursor-pointer`}
       >
         Find Job
         <div className="w-6 h-6  bg-white rounded-full flex items-center justify-center shadow-sm">
           <ArrowIcon className="w-2 h-2 text-gray-500 -rotate-90" />
         </div>
-      </div>
+      </Link>
     </div>
   );
 }
