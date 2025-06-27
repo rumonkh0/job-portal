@@ -106,7 +106,7 @@ function Header() {
                       <img className="w-6 h-6" src="/setting.svg" alt="" /> My
                       Profile
                     </Link>
-                    <Link to="/edit-profile" className="flex items-center gap-3 py-2 px-6  hover:bg-white cursor-pointer">
+                    <Link to="/jobs" className="flex items-center gap-3 py-2 px-6  hover:bg-white cursor-pointer">
                       <img className="w-6 h-6" src="/setting.svg" alt="" /> My
                       Jobs
                     </Link>

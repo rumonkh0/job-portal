@@ -9,13 +9,14 @@ import Header from "./sections/header/Header";
 import Footer from "./sections/footer/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import EditProfile from "./pages/EditProfile";
+import JobSearch from "./pages/JobSearch";
 
 function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="flex flex-col items-center gap-20 smoo">
-        <Header />
+      <Header />
+      <div className="flex flex-col items-center gap-20">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
@@ -23,21 +24,10 @@ function App() {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/edit-profile" element={<EditProfile />} />
+          <Route path="/jobs" element={<JobSearch />} />
           <Route path="*" element={<h2>404 Not Found</h2>} />
         </Routes>
         <Footer />
-        {/* <AboutUs/> */}
-        {/* <Login/> */}
-        {/* <Register /> */}
-        {/* <Modal /> */}
-        {/* <FormModal /> */}
-        {/* <ContactUs/> */}
-        {/* <BannerProfile /> */}
-        {/* <UserDetailsForm /> */}
-        {/* <FromWorkExperience /> */}
-        {/* <FormEducation /> */}
-        {/* <FormSkill/> */}
-        {/* <CvResumeForm /> */}
       </div>
     </Router>
   );

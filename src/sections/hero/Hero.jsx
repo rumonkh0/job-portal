@@ -15,7 +15,19 @@ function Hero() {
             through streamlined employment processes and opportunities.
           </div>
         </div>
-        <SearchJob />
+        <div className="relative z-2">
+          <SearchJob bgColor="white" btnColor="blue" btnText="white" />
+          <img
+            className="absolute top-0 left-[460px] -translate-y-full"
+            src="/cornerUp.svg"
+            alt=""
+          />
+          <img
+            className="absolute bottom-0 left-[460px] translate-y-full"
+            src="/cornerDown.svg"
+            alt=""
+          />
+        </div>
         <div className="hero_footer flex justify-between items-center">
           <div className="professoinals flex flex-col items-center">
             <div className="images pb-4 flex -space-x-3">

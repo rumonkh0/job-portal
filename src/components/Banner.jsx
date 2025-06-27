@@ -10,7 +10,7 @@ function Banner({ title, description, children }) {
       />
       <div className="absolute inset-0 bg-blue-600 opacity-68"></div>
 
-      <div className="w-[850px] -mt-[100px] flex flex-col gap-8 justify-center items-center z-10 text-white">
+      <div className="w-[850px]  flex flex-col gap-8 justify-center items-center z-10 text-white">
         <div className="text-[40px] font-bold">{title}</div>
         <div className="text-center ">{description}</div>
         <div>{children}</div>
