@@ -30,30 +30,31 @@ export default function JobSearch() {
           <div>
             <h4 className="font-medium text-lg">Active filters</h4>
             <div className="flex flex-wrap gap-3 mt-[20px] mb-[40px]">
-              <p className="flex text-base bg-white p-1 justify-center items-center ">
+              <p className="flex text-gray-600 bg-white p-1 pl-2 rounded justify-center items-center ">
                 Last 30 days
-                <span className="bg-[#F1F2F4] ml-[8px]">
-                  <RxCross2 />
+                <span className="bg-gray-100 w-6 h-6 rounded flex justify-center items-center ml-2 text-gray-400">
+                  <RxCross2 size={20} />
                 </span>
               </p>
-              <p className="flex text-base bg-white p-1 justify-center items-center ">
+              <p className="flex text-gray-600 bg-white p-1 pl-2 rounded justify-center items-center ">
                 Internship
-                <span className="bg-[#F1F2F4] ml-[8px]">
-                  <RxCross2 />{" "}
+                <span className="bg-gray-100 w-6 h-6 rounded flex justify-center items-center ml-2 text-gray-400">
+                  <RxCross2 size={20} />
                 </span>
               </p>
-              <p className="flex text-base bg-white p-1 justify-center items-center ">
-                Trade
-                <span className="bg-[#F1F2F4] ml-[8px]">
-                  <RxCross2 />{" "}
+              <p className="flex text-gray-600 bg-white p-1 pl-2 rounded justify-center items-center ">
+                Trade{" "}
+                <span className="bg-gray-100 w-6 h-6 rounded flex justify-center items-center ml-2 text-gray-400">
+                  <RxCross2 size={20} />
                 </span>
               </p>
-              <p className="flex text-base bg-white p-1 justify-center items-center ">
+              <p className="flex text-gray-600 bg-white p-1 pl-2 rounded justify-center items-center ">
                 Managing Director
-                <span className="bg-[#F1F2F4] ml-[8px]">
-                  <RxCross2 />{" "}
+                <span className="bg-gray-100 w-6 h-6 rounded flex justify-center items-center ml-2 text-gray-400">
+                  <RxCross2 size={20} />
                 </span>
               </p>
+              
             </div>
           </div>
           <div>
@@ -139,7 +140,7 @@ export default function JobSearch() {
             </div>
           </div>
 
-          <button className="text-base text-white bg-[#0A65CC] px-[32px] py-[8px] mb-[40px]">
+          <button className="text-base text-white bg-[#0A65CC] px-[32px] py-[8px] mb-[40px] rounded">
             Apply Filter
           </button>
         </div>

@@ -33,7 +33,7 @@ export default function JobItem() {
         </div>
         <div className="flex flex-col gap-[21px]">
           <div className="text-right">
-            <div className="w-[215px] h-[6px] mb-2 bg-gray-200 [ms-auto relative ">
+            <div className="w-[215px] h-[6px] mb-2 bg-gray-200 ms-auto relative ">
               <div
                 className="absolute top-0 left-0 h-full bg-gray-500 "
                 style={{ width: `${(10 / 200) * 100}%` }} // 5%

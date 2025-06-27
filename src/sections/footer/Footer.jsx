@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaFacebookF } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -19,21 +22,11 @@ function Footer() {
           <div className="about">
             <h6 className="text-[20px] font-medium pb-4">About</h6>
             <ul className="leading-6">
-              <li className="leading-10 whitespace-nowrap">
-                Companies
-              </li>
-              <li className="leading-10 whitespace-nowrap">
-                Courses
-              </li>
-              <li className="leading-10 whitespace-nowrap">
-                Featured Jobs
-              </li>
-              <li className="leading-10 whitespace-nowrap">
-                Hot Jobs
-              </li>
-              <li className="leading-10 whitespace-nowrap">
-                Privacy Policy
-              </li>
+              <li className="leading-10 whitespace-nowrap">Companies</li>
+              <li className="leading-10 whitespace-nowrap">Courses</li>
+              <li className="leading-10 whitespace-nowrap">Featured Jobs</li>
+              <li className="leading-10 whitespace-nowrap">Hot Jobs</li>
+              <li className="leading-10 whitespace-nowrap">Privacy Policy</li>
               <li className="leading-10 whitespace-nowrap">
                 Terms and Conditions
               </li>
@@ -42,15 +35,9 @@ function Footer() {
           <div className="resources">
             <h6 className="text-[20px] font-medium pb-4">Resources</h6>
             <ul>
-              <li className="leading-10 whitespace-nowrap">
-                Help Docs
-              </li>
-              <li className="leading-10 whitespace-nowrap">
-                Guide
-              </li>
-              <li className="leading-10 whitespace-nowrap">
-                Update
-              </li>
+              <li className="leading-10 whitespace-nowrap">Help Docs</li>
+              <li className="leading-10 whitespace-nowrap">Guide</li>
+              <li className="leading-10 whitespace-nowrap">Update</li>
               <Link to="/about" className="leading-10 whitespace-nowrap">
                 Contact Us
               </Link>
@@ -84,14 +71,20 @@ function Footer() {
       <div className="footer_bottom w-[1170px] flex justify-between items-center py-6">
         <div className="footer_text">© 2025 JobInto. All rights reserved.</div>
         <ul className="footer_links flex gap-6">
-          <li>
-            <a href="/fb">facebook</a>
+          <li className="w-8 h-8 bg-gray-800 rounded-full flex justify-center items-center cursor-pointer">
+            <a href="/fb">
+              <FaFacebookF />
+            </a>
           </li>
-          <li>
-            <a href="/insta">instagram</a>
+          <li className="w-8 h-8 bg-gray-800 rounded-full flex justify-center items-center cursor-pointer">
+            <a href="/insta">
+              <FaLinkedinIn />
+            </a>
           </li>
-          <li>
-            <a href="/x">x</a>
+          <li className="w-8 h-8 bg-gray-800 rounded-full flex justify-center items-center cursor-pointer">
+            <a href="/x">
+              <FaXTwitter />
+            </a>
           </li>
         </ul>
       </div>

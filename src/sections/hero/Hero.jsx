@@ -4,7 +4,7 @@ import SearchJob from "../../components/SearchJob";
 
 function Hero() {
   return (
-    <div className="w-[1170px] flex justify-between">
+    <div className="w-[1170px] flex justify-between mt-16">
       <div className="hero_left w-[435px] flex flex-col gap-4">
         <div className="flex flex-col gap-10">
           <div className="title text-[44px] font-medium leading-[54px]">
