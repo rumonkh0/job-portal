@@ -63,7 +63,7 @@ function Header() {
               </Link>
               <Link
                 to="/register"
-                className="register text-white px-9 py-3 rounded border-blue-700 bg-blue-700"
+                className="register text-white px-9 py-3 rounded border-blue-600 bg-blue-600"
               >
                 Register
               </Link>
@@ -116,7 +116,7 @@ function Header() {
                     </Link>
                   </div>
                   <div
-                    className="text-center cursor-pointer pt-6 pb-4 text-lg text-blue-700 font-medium"
+                    className="text-center cursor-pointer pt-6 pb-4 text-lg text-blue-600 font-medium"
                     onClick={() => setSignin(false)}
                   >
                     Sing Out

@@ -10,6 +10,7 @@ import Footer from "./sections/footer/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import EditProfile from "./pages/EditProfile";
 import JobSearch from "./pages/JobSearch";
+import Description from "./pages/Description";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/edit-profile" element={<EditProfile />} />
           <Route path="/jobs" element={<JobSearch />} />
+          <Route path="/job-description" element={<Description />} />
           <Route path="*" element={<h2>404 Not Found</h2>} />
         </Routes>
         <Footer />

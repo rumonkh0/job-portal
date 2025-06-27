@@ -2,10 +2,11 @@ import React from "react";
 // import jobIcon from "../../../assets/"
 import jobIcon from "/Group.png";
 import { TiBookmark } from "react-icons/ti";
+import { Link } from "react-router-dom";
 export default function JobItem() {
   return (
-    <div>
-      <div className="flex p-[24px] shadow-lg inset-shadow-sm  justify-between mt-[40px]">
+    <>
+      <Link to="/job-description" className="flex p-[24px] shadow-lg inset-shadow-sm  justify-between mt-[40px]">
         <div className="">
           <div className="flex">
             <div>
@@ -52,7 +53,7 @@ export default function JobItem() {
             </button>
           </div>
         </div>
-      </div>
-    </div>
+      </Link>
+    </>
   );
 }
