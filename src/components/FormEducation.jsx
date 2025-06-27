@@ -131,17 +131,6 @@ function FormEducation() {
           </div>
         </div>
       </div>
-
-      <div className="w-full flex justify-between items-center">
-        <div className="px-6.5 py-3 flex items-center gap-2 bg-gray-100 rounded">
-          <DirectionIcon />
-          Back
-        </div>
-        <div className="px-6.5 py-3 flex items-center gap-2 bg-blue-700 text-white rounded">
-          Next
-          <DirectionIcon className="rotate-180" />
-        </div>
-      </div>
     </div>
   );
 }

@@ -20,7 +20,7 @@ function Header() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
   return (
-    <div>
+    <div className="sticky top-0 w-full flex justify-center pb-4 bg-white rounded z-55">
       <header className="mt-8 w-[1170px] h-[48px] flex justify-between items-center">
         <div className="header flex gap-2 font-bold text-lg">
           <img src="/logo.svg" alt="" /> JobInto{" "}

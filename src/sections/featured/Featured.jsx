@@ -4,8 +4,8 @@ import FeatureCard from "../../components/FeatureCard";
 function Featured() {
   return (
     <div className="w-[1170px] flex flex-col gap-10 my-20">
-      <h1 class="title text-3xl font-bold text-right">Featured Job</h1>
-      <div class="cards flex flex-wrap gap-7.5">
+      <h1 className="title text-3xl font-bold text-right">Featured Job</h1>
+      <div className="cards flex flex-wrap gap-7.5">
         {Array.from({ length: 6 }).map((_, index) => (
           <FeatureCard
             key={index}

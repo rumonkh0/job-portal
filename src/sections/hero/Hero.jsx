@@ -6,7 +6,7 @@ function Hero() {
   return (
     <div className="w-[1170px] flex justify-between">
       <div className="hero_left w-[435px] flex flex-col gap-4">
-        <div class="flex flex-col gap-10">
+        <div className="flex flex-col gap-10">
           <div className="title text-[44px] font-medium leading-[54px]">
             Jobs Made Simple Dreams Made Real
           </div>
@@ -18,7 +18,7 @@ function Hero() {
         <SearchJob />
         <div className="hero_footer flex justify-between items-center">
           <div className="professoinals flex flex-col items-center">
-            <div class="images pb-4 flex -space-x-3">
+            <div className="images pb-4 flex -space-x-3">
               <img
                 className="w-[40px] h-[40px] rounded-full object- border-2 border-white"
                 src="/1.png"
@@ -44,7 +44,7 @@ function Hero() {
             <div className="text-gray-600">professionals</div>
           </div>
           <div className="watchvideo px-16 py-6.5 flex items-center gap-2 border border-dotted border-blue-500 rounded-[16px]">
-            <div class="video_icon">
+            <div className="video_icon">
               <img src="/video_icon.png" alt="video icon" />
             </div>
             <div className="video_text text-gray-500">Watch Video</div>
