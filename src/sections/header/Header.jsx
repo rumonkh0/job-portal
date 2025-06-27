@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 function Header() {
-  const [signin] = useState(false);
+  const [signin, setSignin] = useState(false);
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -26,17 +26,20 @@ function Header() {
           <img src="/logo.svg" alt="" /> JobInto{" "}
         </div>
         <nav className="nav tranal flex justify-center items-center gap-7">
-          <NavLink to="/"
+          <NavLink
+            to="/"
             className={({ isActive }) => `${isActive ? activeClass : ""}`}
           >
             Home
           </NavLink>
-          <NavLink to="/about"
+          <NavLink
+            to="/about"
             className={({ isActive }) => `${isActive ? activeClass : ""}`}
           >
             About Us
           </NavLink>
-          <NavLink to="/contact"
+          <NavLink
+            to="/contact"
             className={({ isActive }) => `${isActive ? activeClass : ""}`}
           >
             Contact Us
@@ -51,10 +54,17 @@ function Header() {
         >
           {!signin ? (
             <>
-              <Link to="/login" className="login text-blue-600 px-9 py-3 border rounded border-gray-500">
+              <Link
+                // to="/login"
+                onClick={()=> setSignin(true)}
+                className="login text-blue-600 px-9 py-3 border rounded border-gray-500"
+              >
                 Login
               </Link>
-              <Link to="/register" className="register text-white px-9 py-3 rounded border-blue-700 bg-blue-700">
+              <Link
+                to="/register"
+                className="register text-white px-9 py-3 rounded border-blue-700 bg-blue-700"
+              >
                 Register
               </Link>
             </>
@@ -92,20 +102,23 @@ function Header() {
                     />
                   </div>
                   <div>
-                    <div className="flex items-center gap-3 py-2 px-6 border-t border-b border-gray-400 hover:bg-white cursor-pointer">
+                    <Link to="/edit-profile" className="flex items-center gap-3 py-2 px-6 border-t border-b border-gray-400 hover:bg-white cursor-pointer">
                       <img className="w-6 h-6" src="/setting.svg" alt="" /> My
                       Profile
-                    </div>
-                    <div className="flex items-center gap-3 py-2 px-6  hover:bg-white cursor-pointer">
+                    </Link>
+                    <Link to="/edit-profile" className="flex items-center gap-3 py-2 px-6  hover:bg-white cursor-pointer">
                       <img className="w-6 h-6" src="/setting.svg" alt="" /> My
                       Jobs
-                    </div>
-                    <div className="flex items-center gap-3 py-2 px-6 border-t border-b cursor-pointer border-gray-400 hover:bg-white">
+                    </Link>
+                    <Link to="/edit-profile" className="flex items-center gap-3 py-2 px-6 border-t border-b cursor-pointer border-gray-400 hover:bg-white">
                       <img className="w-6 h-6" src="/setting.svg" alt="" />
                       Settings
-                    </div>
+                    </Link>
                   </div>
-                  <div className="text-center cursor-pointer pt-6 pb-4 text-lg text-blue-700 font-medium">
+                  <div
+                    className="text-center cursor-pointer pt-6 pb-4 text-lg text-blue-700 font-medium"
+                    onClick={() => setSignin(false)}
+                  >
                     Sing Out
                   </div>
                 </div>

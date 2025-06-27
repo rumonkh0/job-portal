@@ -7,6 +7,7 @@ import UserIcon from "../assets/user.svg?react";
 import ModalContainer from "../components/ModalContainer";
 import { useState } from "react";
 import Modal from "../components/ModalRegistration";
+import { Link } from "react-router-dom";
 
 function Register() {
   const [open, setOpen] = useState(false);
@@ -23,9 +24,9 @@ function Register() {
           <p className="text-center">
             To start a bright career be connected with employer
           </p>
-          <div className="px-12 py-3 bg-white text-black rounded mt-[56px] cursor-pointer">
+          <Link to="/login" className="px-12 py-3 bg-white text-black rounded mt-[56px] cursor-pointer">
             Login
-          </div>
+          </Link>
         </div>
         {/* <img
           className="absolute inset-0 w-full h-full object-cover opacity-60 z-0"
@@ -130,7 +131,13 @@ function Register() {
         </div>
       </div>
       <ModalContainer isOpen={open} onClose={() => setOpen(false)}>
-        <Modal />
+        <Modal title="Registered Successfully"   description={
+    <>
+      <p>Thanks for registration.</p>
+      <p>You can find your job easily.</p>
+    </>
+  }
+/>
       </ModalContainer>
     </div>
   );

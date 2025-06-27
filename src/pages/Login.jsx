@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import MailIcon from "../assets/gmail.svg?react";
 import LockIcon from "../assets/lock.svg?react";
 
@@ -60,9 +61,9 @@ function Login() {
             Log In
           </div>
         </form>
-        <div>
+        <Link to="/register">
           Didn't have account? <span className="text-blue-500">Register</span>
-        </div>
+        </Link>
       </div>
     </div>
   );
