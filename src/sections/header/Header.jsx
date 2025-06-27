@@ -1,8 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
+import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 function Header() {
-  const [signin] = useState(true);
+  const [signin] = useState(false);
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef(null);
+
+  const activeClass = "border-b border-blue-600 text-blue-600";
 
   // Close dropdown on outside click
   useEffect(() => {
@@ -21,17 +25,23 @@ function Header() {
         <div className="header flex gap-2 font-bold text-lg">
           <img src="/logo.svg" alt="" /> JobInto{" "}
         </div>
-        <ul className="nav flex justify-center items-center gap-7">
-          <li className="nav-item border-b border-blue-600 text-blue-600">
-            <a href="/">Home</a>
-          </li>
-          <li className="nav-item">
-            <a href="/about">About Us</a>
-          </li>
-          <li className="nav-item">
-            <a href="/contact">Contact Us</a>
-          </li>
-        </ul>
+        <nav className="nav flex justify-center items-center gap-7">
+          <NavLink to="/"
+            className={({ isActive }) => `${isActive ? activeClass : ""}`}
+          >
+            Home
+          </NavLink>
+          <NavLink to="/about"
+            className={({ isActive }) => `${isActive ? activeClass : ""}`}
+          >
+            About Us
+          </NavLink>
+          <NavLink to="/contact"
+            className={({ isActive }) => `${isActive ? activeClass : ""}`}
+          >
+            Contact Us
+          </NavLink>
+        </nav>
         <div
           className={`auth relative flex justify-center items-center transition-all ${
             signin ? " gap-3" : " gap-8"
@@ -41,12 +51,12 @@ function Header() {
         >
           {!signin ? (
             <>
-              <div className="login text-blue-600 px-9 py-3 border rounded border-gray-500">
+              <Link to="/login" className="login text-blue-600 px-9 py-3 border rounded border-gray-500">
                 Login
-              </div>
-              <div className="register text-white px-9 py-3 rounded border-blue-700 bg-blue-700">
+              </Link>
+              <Link to="/register" className="register text-white px-9 py-3 rounded border-blue-700 bg-blue-700">
                 Register
-              </div>
+              </Link>
             </>
           ) : (
             <>

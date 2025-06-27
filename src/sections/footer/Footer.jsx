@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -50,9 +51,9 @@ function Footer() {
               <li className="leading-10 whitespace-nowrap">
                 Update
               </li>
-              <li className="leading-10 whitespace-nowrap">
+              <Link to="/about" className="leading-10 whitespace-nowrap">
                 Contact Us
-              </li>
+              </Link>
             </ul>
           </div>
         </div>

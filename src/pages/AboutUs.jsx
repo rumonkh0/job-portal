@@ -1,12 +1,13 @@
 import Banner from "../components/Banner";
-import Header from "../sections/header/Header";
-import Footer from "../sections/footer/Footer";
 import BulletIcon from "../assets/bullet.svg?react";
 function AboutUs() {
   return (
     <>
-      <Header />
-      <Banner />
+      <Banner
+        title="About Us"
+        description="Connecting talent with opportunity, we are your trusted partner in the
+          journey towards career growth and organizational success"
+      />
       <div className="w-[1184px] flex justify-between gap-16 mt-10 items-stretch">
         <div className="flex-1 flex flex-col justify-start gap-8">
           <div className="text-[40px] font-bold">Who we are</div>
@@ -99,11 +100,14 @@ function AboutUs() {
             </ul>
           </div>
           <div className="flex-1 ">
-            <img className="rounded h-full" src="/Rectangle 2746_1.png" alt="" />
+            <img
+              className="rounded h-full"
+              src="/Rectangle 2746_1.png"
+              alt=""
+            />
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

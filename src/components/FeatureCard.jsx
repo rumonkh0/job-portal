@@ -2,7 +2,7 @@ import React from "react";
 
 function FeatureCard({ name, type, salary, logo, instituteName, location }) {
   return (
-    <div className="card w-[370px] flex flex-col gap-6 px-4 py-3 bg-gradient-to-r from-blue-600/16 to-blue-600/2 rounded hover:text-white hover:bg-blue-600 group">
+    <div className="card w-[370px] transition-all flex flex-col gap-6 px-4 py-3 bg-gradient-to-r from-blue-600/16 to-blue-600/2 rounded hover:text-white hover:bg-blue-600 group">
       <div className="top flex flex-col gap-2">
         <h6 className="text-[20px] font-semibold">{name}</h6>
         <div className="flex items-center gap-2">

@@ -10,14 +10,12 @@ import Hero from "../sections/hero/Hero";
 function Home() {
   return (
     <>
-      <Header />
       <Hero />
       <Category />
       <Specialized />
       <Featured />
       <Stats />
       <Courses />
-      <Footer />
     </>
   );
 }

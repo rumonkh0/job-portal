@@ -3,9 +3,14 @@ import LockIcon from "../assets/lock.svg?react";
 
 function Login() {
   return (
-    <div className="w-[1170px] flex justify-around items-stretch">
-      <div className="w-[555px] relative flex items-center justify-center text-white bg-blue-500">
-        <div className=" relative flex flex-col items-center justify-items-stretch gap-4 z-5">
+    <div
+      className="w-[1170px]  flex justify-around items-stretch"
+      style={{
+        boxShadow: "0 0 10px rgba(0,0,0,0.15)",
+      }}
+    >
+      <div className="w-[555px] m-1 relative flex items-center justify-center text-white bg-blue-500">
+        <div className="relative flex flex-col items-center justify-items-stretch gap-4 z-5">
           <h1 className="text-[40px] font-bold">Welcome back</h1>
           <p className="text-center">
             To start a bright career be connected with employer
